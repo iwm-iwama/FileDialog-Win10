@@ -7,7 +7,7 @@ namespace iwm_FileDialog
 {
 	public partial class Form1 : Form
 	{
-		private const string VER = "FileDialog iwm20201115";
+		private const string VER = "FileDialog iwm20210601";
 		private const string NL = "\r\n";
 
 		private static readonly string[] ARGS = Environment.GetCommandLineArgs();
@@ -69,10 +69,11 @@ namespace iwm_FileDialog
 
 		private string RtnFileSelect()
 		{
-			OpenFileDialog ofd = openFileDialog1;
-
-			ofd.InitialDirectory = Environment.CurrentDirectory;
-			ofd.Multiselect = MULTI_SELECT;
+			OpenFileDialog ofd = new OpenFileDialog()
+			{
+				InitialDirectory = Environment.CurrentDirectory,
+				Multiselect = MULTI_SELECT
+			};
 
 			if (ofd.ShowDialog() == DialogResult.OK)
 			{
@@ -94,11 +95,6 @@ namespace iwm_FileDialog
 			}
 
 			return "";
-		}
-
-		private void OpenFileDialog1_HelpRequest(object sender, EventArgs e)
-		{
-			_ = MessageBox.Show(HELP_TEXT, "コマンドライン");
 		}
 
 		private void TbText_MouseUp(object sender, MouseEventArgs e)

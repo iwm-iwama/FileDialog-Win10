@@ -29,18 +29,12 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 			this.TbText = new System.Windows.Forms.TextBox();
 			this.CmsNull = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.CmsTextSelect = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.CmsTextSelect_コピー = new System.Windows.Forms.ToolStripMenuItem();
 			this.CmsTextSelect.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// openFileDialog1
-			// 
-			this.openFileDialog1.ShowHelp = true;
-			this.openFileDialog1.HelpRequest += new System.EventHandler(this.OpenFileDialog1_HelpRequest);
 			// 
 			// TbText
 			// 
@@ -110,7 +104,6 @@
 		}
 
 		#endregion
-		private System.Windows.Forms.OpenFileDialog openFileDialog1;
 		private System.Windows.Forms.TextBox TbText;
 		private System.Windows.Forms.ContextMenuStrip CmsTextSelect;
 		private System.Windows.Forms.ToolStripMenuItem CmsTextSelect_コピー;
