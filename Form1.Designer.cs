@@ -38,9 +38,9 @@
 			// 
 			// TbText
 			// 
-			this.TbText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			this.TbText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+			| System.Windows.Forms.AnchorStyles.Left)
+			| System.Windows.Forms.AnchorStyles.Right)));
 			this.TbText.BackColor = System.Drawing.Color.White;
 			this.TbText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.TbText.ContextMenuStrip = this.CmsNull;
@@ -66,7 +66,7 @@
 			// CmsTextSelect
 			// 
 			this.CmsTextSelect.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CmsTextSelect_コピー});
+			this.CmsTextSelect_コピー});
 			this.CmsTextSelect.Name = "CmsResult";
 			this.CmsTextSelect.Size = new System.Drawing.Size(100, 26);
 			// 
